@@ -20,6 +20,7 @@ class PersistentBottomNavBarItem {
       this.scrollController,
       this.routeAndNavigatorSettings,
       this.scrollToTopOnNavBarItemPress = true,
+      this.iconTitleMargin = 15,
       this.onPressed})
       : assert(opacity >= 0 && opacity <= 1.0,
             "Opacity cannot be greater than 1 and less than 0");
@@ -85,4 +86,6 @@ class PersistentBottomNavBarItem {
 
   ///If an already selected navigation bar is tapped again, the scroll controller provided in `PersistentBottomNavBarItem` will animate to top.
   final bool scrollToTopOnNavBarItemPress;
+
+  final double iconTitleMargin;
 }
